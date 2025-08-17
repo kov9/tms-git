@@ -1,3 +1,7 @@
+## Задание 1 – установить MongoDB.
+\* создать таблицу data; создать пользователя manager, у которого будет доступ только на чтение этой таблицы.
+![alt text](telegram-cloud-photo-size-2-5244982700480264244-x.jpg)
+
 ## Задание 3 – написать Bash-скрипт в соответствии с требованиями:
 Содержание скрипта: замена существующего расширения в имени файла на заданное. Исходное имя файла и новое  асширение передаются скрипту в качестве параметров. Основное средство: нестандартное раскрытие переменных. Усложнение: предусмотреть штатную реакцию на отсутствие расширения в исходном имени файла.
 
@@ -17,7 +21,7 @@ newname="${file%.*}.$newext"
 mv "$file" "$newname"
 ```
 
-![alt text](telegram-cloud-photo-size-2-5244982700480264244-x.jpg)
+![alt text](telegram-cloud-photo-size-2-5247234500293947384-y.jpg)
 
 
 ## Задание 4 – написать Bash-скрипт в соответствии с требованиями:
@@ -27,25 +31,25 @@ mv "$file" "$newname"
 #!/bin/bash
 
 echo "Enter the string"
-input="$1"
+read input
 echo "Enter first char"
-start="$2"
+read start
 echo "Enter last char"
-end="$3"
+read end
 echo "Choose the mode: extract/delete"
-mode="$4"
+read mode
 
 if [ "$mode" = "extract" ]; then
     echo "$input" | cut -c "$start"-"$end"
 elif [ "$mode" = "delete" ]; then
     echo "$input" | cut -c "$start"-"$end" --complement
 else
-    echo "Incorrect mode: $modeg
+    echo "Incorrect mode: $mode"
     exit 1
 fi
 ```
+![alt text](image-4.png)
 
-![alt text](telegram-cloud-photo-size-2-5247234500293947384-y.jpg)
 
 
 # Задание 1&2 дополнительные
