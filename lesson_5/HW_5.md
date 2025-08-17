@@ -40,9 +40,24 @@ if [ "$mode" = "extract" ]; then
 elif [ "$mode" = "delete" ]; then
     echo "$input" | cut -c "$start"-"$end" --complement
 else
-    echo "Incorrect mode: $mode"
+    echo "Incorrect mode: $modeg
     exit 1
 fi
 ```
 
 ![alt text](telegram-cloud-photo-size-2-5247234500293947384-y.jpg)
+
+
+# Задание 1&2 дополнительные
+
+## Список всех дисков и разделов
+![alt text](image.png)
+
+## LVM
+![alt text](image-1.png)
+
+## Файловая система
+![alt text](image-2.png)
+
+## Статус сервисов
+![alt text](image-3.png)
